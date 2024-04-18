@@ -1,0 +1,7 @@
+.gitAvatar{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}

@@ -1,0 +1,14 @@
+.postsPage {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .details {
+    flex: 0 0 40%;
+  }
+  
+  .posts {
+    flex: 0 0 50%;
+  }
