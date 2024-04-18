@@ -10,10 +10,10 @@
 }
 
 .tablinks {
-  border-radius: 10px;
+  margin: 10px;
+  border: none;
   color: white;
   background: none;
-  border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -22,7 +22,7 @@
 }
 
 .tablinks:hover {
-  background-color: #ddd;
+  background-color: #424242;
 }
 
 .tabcontent {

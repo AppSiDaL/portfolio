@@ -8,13 +8,31 @@ export default function Tabs() {
   return (
     <div className="tabs">
       <div className="tab">
-        <button className="tablinks" onClick={() => setActiveTab("Posts")}>
+        <button
+          className="tablinks"
+          onClick={() => setActiveTab("Posts")}
+          style={{
+            borderBottom: activeTab === "Posts" ? "3px solid #AD1A1C" : "",
+          }}
+        >
           Posts
         </button>
-        <button className="tablinks" onClick={() => setActiveTab("IGTV")}>
+        <button
+          className="tablinks"
+          onClick={() => setActiveTab("IGTV")}
+          style={{
+            borderBottom: activeTab === "IGTV" ? "3px solid #AD1A1C" : "",
+          }}
+        >
           IGTV
         </button>
-        <button className="tablinks" onClick={() => setActiveTab("Tagged")}>
+        <button
+          className="tablinks"
+          onClick={() => setActiveTab("Tagged")}
+          style={{
+            borderBottom: activeTab === "Tagged" ? "3px solid #AD1A1C" : "",
+          }}
+        >
           Tagged
         </button>
       </div>
