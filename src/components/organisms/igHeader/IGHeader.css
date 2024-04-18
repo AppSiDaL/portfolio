@@ -1,0 +1,26 @@
+
+.igHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #000000;
+}
+
+.igText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.notiIcon {
+  margin-left: auto;
+}
+
+
+.verifiedIcon{
+  color: var(--main-bg-color);
+}
