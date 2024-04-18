@@ -14,13 +14,21 @@ export default function PostCard({
 }: PostCardProps) {
   return (
     <div className="postCard">
-      <img src={avatar} alt="Avatar" className="postAvatar" />
-      <Text h="h3" w="bold">
-        {username}
-      </Text>
-      <Text h="h3" w="bold">
-        {date}
-      </Text>
+      <div className="userData">
+        <img
+          src={avatar}
+          alt="Avatar"
+          className="postAvatar"
+        />
+        <div>
+          <Text h="h3" w="normal">
+            {username}
+          </Text>
+          <Text className="date" w="normal">
+            {date}
+          </Text>
+        </div>
+      </div>
       {content}
     </div>
   );

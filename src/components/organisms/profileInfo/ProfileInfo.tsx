@@ -1,5 +1,6 @@
 import Text from "../../atoms/text/Text";
 import "./ProfileInfo.css";
+import profileImage from "../../../assets/profile.jpg";
 
 export default function ProfileInfo() {
   return (
@@ -10,11 +11,7 @@ export default function ProfileInfo() {
         src="https://st2.depositphotos.com/4413287/44394/i/450/depositphotos_443941376-stock-illustration-natural-linen-material-textile-canvas.jpg"
       />
       <div className="info">
-        <img
-          src="https://www.w3schools.com/howto/img_avatar.png"
-          alt="Avatar"
-          className="avatar"
-        />
+        <img src={profileImage} alt="Avatar" className="avatar" />
         <div className="data">
           <Text h="h2" w="bold" className="name">
             Gilberto Davalos Nava
