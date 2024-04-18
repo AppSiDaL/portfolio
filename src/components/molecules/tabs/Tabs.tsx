@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Posts from "../../pages/posts/Posts";
 import "./Tabs.css";
+import Button from "../../atoms/button/Button";
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState("Posts");
@@ -9,7 +10,7 @@ export default function Tabs() {
     <div>
       <div className="tabs">
         <div className="tab">
-          <button
+          <Button
             className="tablinks"
             onClick={() => setActiveTab("Posts")}
             style={{
@@ -18,8 +19,8 @@ export default function Tabs() {
             }}
           >
             Posts
-          </button>
-          <button
+          </Button>
+          <Button
             className="tablinks"
             onClick={() => setActiveTab("IGTV")}
             style={{
@@ -28,8 +29,8 @@ export default function Tabs() {
             }}
           >
             IGTV
-          </button>
-          <button
+          </Button>
+          <Button
             className="tablinks"
             onClick={() => setActiveTab("Tagged")}
             style={{
@@ -38,7 +39,7 @@ export default function Tabs() {
             }}
           >
             Tagged
-          </button>
+          </Button>
         </div>
       </div>
       {activeTab === "Posts" && <Posts />}

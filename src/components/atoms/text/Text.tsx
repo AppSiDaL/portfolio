@@ -43,7 +43,7 @@ export default function Text({ children, w, h, className }: TextProps) {
   }
 
   const props: HTMLAttributes<HTMLElement> = {
-    style: { fontWeight: weight, fontSize: fontSize },
+    style: { fontWeight: weight, fontSize: fontSize,margin:5 },
     className: `text ${className}`,
   };
 

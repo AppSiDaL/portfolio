@@ -1,7 +1,14 @@
-.gitAvatar{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block;
+.gitAvatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.followButton {
+  background-color: #21262d;
+  border: none;
+  color: #b9c0c8;
+  width: 100%;
 }
