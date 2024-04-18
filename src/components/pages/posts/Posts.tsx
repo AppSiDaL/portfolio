@@ -1,8 +1,4 @@
-import Separator from "../../atoms/separator/Separator";
-
+import "./Posts.css";
 export default function Posts() {
-  return (
-    <div className="posts">
-    </div>
-  );
+  return <div className="posts"></div>;
 }

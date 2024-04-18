@@ -13,6 +13,7 @@ export default function Tabs() {
           onClick={() => setActiveTab("Posts")}
           style={{
             borderBottom: activeTab === "Posts" ? "3px solid #AD1A1C" : "",
+            color: activeTab === "Posts" ? "#AD1A1C" : "white",
           }}
         >
           Posts
@@ -22,6 +23,7 @@ export default function Tabs() {
           onClick={() => setActiveTab("IGTV")}
           style={{
             borderBottom: activeTab === "IGTV" ? "3px solid #AD1A1C" : "",
+            color: activeTab === "IGTV" ? "#AD1A1C" : "white",
           }}
         >
           IGTV
@@ -31,6 +33,7 @@ export default function Tabs() {
           onClick={() => setActiveTab("Tagged")}
           style={{
             borderBottom: activeTab === "Tagged" ? "3px solid #AD1A1C" : "",
+            color: activeTab === "Tagged" ? "#AD1A1C" : "white",
           }}
         >
           Tagged
