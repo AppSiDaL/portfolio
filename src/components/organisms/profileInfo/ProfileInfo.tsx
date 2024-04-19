@@ -1,15 +1,12 @@
 import Text from "../../atoms/text/Text";
 import "./ProfileInfo.css";
 import profileImage from "../../../assets/profile.jpg";
+import CodeHeader from "../../molecules/codeHeader/CodeHeader";
 
 export default function ProfileInfo() {
   return (
     <div className="profileInfo">
-      <img
-        alt="front page image"
-        className="front"
-        src="https://st2.depositphotos.com/4413287/44394/i/450/depositphotos_443941376-stock-illustration-natural-linen-material-textile-canvas.jpg"
-      />
+      <CodeHeader/>
       <div className="info">
         <img src={profileImage} alt="Avatar" className="avatar" />
         <div className="data">
