@@ -1,0 +1,44 @@
+.expCard {
+  border: 1px solid #ddd;
+  background-color: #21262d;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.expCard:hover {
+  background-color: #3c011062;
+  transition: 0.3s;
+}
+.jobData {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  align-items: flex-start;
+}
+
+.postAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.postCard h3 {
+  margin: 5px 0;
+}
+
+.enterprise {
+  font-size: 2rem;
+  color: #999;
+}
+
+.date {
+  font-size: 5px;
+  color: #999;
+}
+
+.location {
+  font-size: 5px;
+  color: #999;
+}
+

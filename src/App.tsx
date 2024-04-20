@@ -1,7 +1,7 @@
 import IGHeader from "./components/organisms/igHeader/IGHeader";
 import ProfileInfo from "./components/organisms/profileInfo/ProfileInfo";
-import Tabs from "./components/molecules/tabs/Tabs";
 import Separator from "./components/atoms/separator/Separator";
+import Posts from "./components/pages/posts/Posts";
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
       <IGHeader />
       <ProfileInfo />
       <Separator />
-      <Tabs />
+      <Posts />
     </div>
   );
 }

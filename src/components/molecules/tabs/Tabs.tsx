@@ -18,7 +18,7 @@ export default function Tabs() {
               color: activeTab === "Posts" ? "#AD1A1C" : "white",
             }}
           >
-            Posts
+            INFO
           </Button>
           <Button
             className="tablinks"
@@ -28,23 +28,12 @@ export default function Tabs() {
               color: activeTab === "IGTV" ? "#AD1A1C" : "white",
             }}
           >
-            IGTV
-          </Button>
-          <Button
-            className="tablinks"
-            onClick={() => setActiveTab("Tagged")}
-            style={{
-              borderBottom: activeTab === "Tagged" ? "3px solid #AD1A1C" : "",
-              color: activeTab === "Tagged" ? "#AD1A1C" : "white",
-            }}
-          >
-            Tagged
+            SHOWCASE
           </Button>
         </div>
       </div>
       {activeTab === "Posts" && <Posts />}
       {activeTab === "IGTV" && <div>IGTV Content</div>}
-      {activeTab === "Tagged" && <div>Tagged Content</div>}
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function GitHubCard() {
       <Text h="h3" w="bold">
         GILBERTO DAVALOS NAVA
       </Text>
-      <Text w="normal">AppSiDaL · he/him</Text>
+      <Text w="normal">AppSiDaL</Text>
       <Button className="followButton">Follow</Button>
       <Text>
         You must not adapt to the system, the system must adapt to you.

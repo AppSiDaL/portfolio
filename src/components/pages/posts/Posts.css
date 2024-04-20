@@ -1,14 +1,21 @@
 .postsPage {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-  }
-  
-  .details {
-    flex: 0 0 30%;
-  }
-  
-  .posts {
-    flex: 0 0 60%;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.details {
+  flex: 0 0 30%;
+}
+
+.posts {
+  flex: 0 0 60%;
+  max-height: 75vh;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #21262D #000000;
+  scroll-behavior: smooth;
+}
+

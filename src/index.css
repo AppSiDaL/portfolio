@@ -107,7 +107,7 @@ section {
 }
 body {
   line-height: 1;
-  --main-bg-color: #AD1A1C;
+  --main-bg-color: #ad1a1c;
 }
 ol,
 ul {
@@ -136,4 +136,10 @@ table {
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: auto;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #21262d #000000;
+  scroll-behavior: smooth;
 }
