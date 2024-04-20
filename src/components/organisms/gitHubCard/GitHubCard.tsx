@@ -5,12 +5,14 @@ import "./GitHubCard.css";
 import GitData from "../../molecules/gitData/GitData";
 export default function GitHubCard() {
   return (
-    <div>
-      <img
-        src="https://avatars.githubusercontent.com/u/112730350?v=4"
-        alt="Avatar"
-        className="gitAvatar"
-      />
+    <div className="gitHubCard">
+      <div className="userAvatar">
+        <img
+          src="https://avatars.githubusercontent.com/u/112730350?v=4"
+          alt="Avatar"
+          className="gitAvatar"
+        />
+      </div>
       <Text h="h3" w="bold">
         GILBERTO DAVALOS NAVA
       </Text>

@@ -1,0 +1,30 @@
+.scrollIndicator {
+  border: 1px solid #ddd;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  position: fixed; /* Cambiado de absolute a fixed */
+  top: 10px; /* Cambiado de 0 a 10px */
+  left: 10px; /* Añadido para mover el componente a la izquierda */
+  transform: none; /* Eliminado para no mover el componente verticalmente */
+  max-height: 2vh;
+  min-height: 2vh;
+  max-width: 18vw;
+  min-width: 18vw;
+}
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.selectedSection {
+  animation-name: colorChange;
+  animation-duration: .5s;
+}

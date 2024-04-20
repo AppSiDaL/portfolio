@@ -12,10 +12,10 @@
 
 .posts {
   flex: 0 0 60%;
-  max-height: 75vh;
+  max-height: 55vh;
   overflow: auto;
   scrollbar-width: thin;
   scrollbar-color: #21262D #000000;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 

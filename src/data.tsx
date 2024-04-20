@@ -1,4 +1,70 @@
 import TesjoClima from "./assets/tesjoClima.png";
+export const aptitudesData = [
+  {
+    name: "HTML",
+    icon: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+  },
+  {
+    name: "CSS",
+    icon: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+  },
+  {
+    name: "TypeScript",
+    icon: "https://titrias.com/files/2022/04/typescript.png",
+  },
+  {
+    name: "React",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+  },
+  {
+    name: "Node.js",
+    icon: "https://midu.dev/images/tags/node.png",
+  },
+  {
+    name: "Express",
+    icon: "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+  },
+  {
+    name: "Postgres",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/640px-Postgresql_elephant.svg.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png",
+  },
+  {
+    name: "Sequelize",
+    icon: "https://cdn.freebiesupply.com/logos/large/2x/sequelize-logo-png-transparent.png",
+  },
+  {
+    name: "Python",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png",
+  },
+  {
+    name: "Django",
+    icon: "https://static-00.iconduck.com/assets.00/django-icon-1606x2048-lwmw1z73.png",
+  },
+  {
+    name: "React Native",
+    icon: "https://cdn1.iconfinder.com/data/icons/soleicons-fill-vol-1/64/reactjs_javascript_library_atom_atomic_react-512.png",
+  },
+  {
+    name: "Expo",
+    icon: "https://seeklogo.com/images/E/expo-go-app-logo-BBBE394CB8-seeklogo.com.png",
+  },
+  {
+    name: "YOLO",
+    icon: "https://cdn.icon-icons.com/icons2/3915/PNG/512/yolo_logo_icon_249127.png",
+  },
+  {
+    name: "Tensorflow",
+    icon: "https://miro.medium.com/v2/resize:fit:1000/1*Pgx0qBpKHFehtZj1K_yXCw.png",
+  },
+  {
+    name: "OpenCV",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg",
+  },
+];
 export const expData = [
   {
     logo: "https://www.anahuac.mx/mexico/vinculacionempresarial/sites/default/files/2021-03/IUSA.jpg",

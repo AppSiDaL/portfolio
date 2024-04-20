@@ -2,54 +2,39 @@ import { exp, project } from "../../../types";
 import Text from "../../atoms/text/Text";
 import "./ExpCard.css";
 import { differenceInDays } from "date-fns";
-import { useEffect, useRef, useState } from "react";
 
 interface PostCardProps {
   exp: exp[];
   projects: project[];
   education: exp[];
+  aptitudes: any[];
+  expRef: any;
+  projectsRef: any;
+  educaationRef: any;
 }
 
-export default function ExpCard({ exp, projects,education }: PostCardProps) {
-  const [currentSection, setCurrentSection] = useState("");
-  const expRef = useRef(null);
-  const projectsRef = useRef(null);
-  const educaationRef = useRef(null);
-
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setCurrentSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (expRef.current) {
-      observer.observe(expRef.current);
-    }
-
-    if (projectsRef.current) {
-      observer.observe(projectsRef.current);
-    }
-
-    return () => {
-      if (expRef.current) {
-        observer.unobserve(expRef.current);
-      }
-
-      if (projectsRef.current) {
-        observer.unobserve(projectsRef.current);
-      }
-    };
-  }, []);
-  console.log(currentSection);
+export default function ExpCard({
+  exp,
+  projects,
+  education,
+  expRef,
+  projectsRef,
+  educaationRef,
+  aptitudes,
+}: PostCardProps) {
   return (
     <div>
+      <div className="skills">
+        {aptitudes.map((a) => (
+          <div className="skillCard">
+            <img src={a.icon} alt="Avatar" className="skillAvatar" />
+            <p key={a} className="skillName">
+              {a.name}
+            </p>
+          </div>
+        ))}
+      </div>
+      <br />
       {exp.map((e) => (
         <div id="experience" className="expCard" ref={expRef}>
           <div className="jobData">
@@ -86,6 +71,7 @@ export default function ExpCard({ exp, projects,education }: PostCardProps) {
           </div>
         </div>
       ))}
+      <br />
       {projects.map((p) => (
         <div id="projects" className="expCard" ref={projectsRef}>
           <div className="jobData">
@@ -122,6 +108,7 @@ export default function ExpCard({ exp, projects,education }: PostCardProps) {
           </div>
         </div>
       ))}
+      <br />
       {education.map((p) => (
         <div id="education" className="expCard" ref={educaationRef}>
           <div className="jobData">

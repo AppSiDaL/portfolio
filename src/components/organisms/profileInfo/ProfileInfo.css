@@ -1,7 +1,8 @@
+
 .profileInfo {
   position: relative;
   width: 100%;
-  height: 50vh; /* Aumenta la altura según sea necesario */
+  height: 40vh; /* Aumenta la altura según sea necesario */
   display: flex;
   flex-direction: column;
   align-items: center;

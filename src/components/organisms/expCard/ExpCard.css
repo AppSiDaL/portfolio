@@ -20,8 +20,7 @@
 
 .expCard:hover .aptitude {
   transition: 0.3s;
-  color: #cf0c3d;
-  background-color: #5822226a;
+  color: rgba(212, 1, 8, 0.586); /* Cambia esto al color que prefieras */
 }
 .jobData {
   display: grid;
@@ -60,10 +59,40 @@
 }
 
 .aptitude {
-  border: 1px solid #cf0c3d62;
+  border: 1px solid #ddd;
   border-radius: 10px;
   margin: 5px;
+  padding: 1px 5px 1px 5px;
   width: fit-content;
-  background-color: #662f2f6a;
-  color: #c03b3b;
+}
+
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.skillCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 28px;
+  background-color: #232323;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.skillAvatar {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
 }
