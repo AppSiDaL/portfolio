@@ -2,11 +2,12 @@ import Text from "../../atoms/text/Text";
 import "./ProfileInfo.css";
 import profileImage from "../../../assets/profile.jpg";
 import CodeHeader from "../../molecules/codeHeader/CodeHeader";
+import DescriptionCard from "../../molecules/descriptionCard/DescriptionCard";
 
 export default function ProfileInfo() {
   return (
     <div className="profileInfo">
-      <CodeHeader/>
+      <CodeHeader />
       <div className="info">
         <img src={profileImage} alt="Avatar" className="avatar" />
         <div className="data">
@@ -20,6 +21,7 @@ export default function ProfileInfo() {
             301 Followers
           </Text>
         </div>
+      <DescriptionCard />
       </div>
     </div>
   );

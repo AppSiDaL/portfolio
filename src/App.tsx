@@ -6,7 +6,6 @@ import Posts from "./components/pages/posts/Posts";
 export default function App() {
   return (
     <div className="main">
-      <IGHeader />
       <ProfileInfo />
       <Separator />
       <Posts />
